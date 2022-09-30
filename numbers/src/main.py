@@ -9,14 +9,14 @@ def is_not_valid(s):
                 return False
     return True
 
-print('Choose the theme 1 - Dark, 2 - Blue')
+print('Choose the theme 1 - Dark, 2 - Blue, 3 - Va-11 Hall-A')
 theme_num = input()
-if theme_num.isdigit() and theme_num in ['1', '2']:
+if theme_num.isdigit() and theme_num in ['1', '2', '3']:
     theme_num = int(theme_num)
 else:
     print('Wrong data - theme set as default')
     theme_num = 1
-theme_names = ['DarkAmber', 'BluePurple']
+theme_names = ['DarkAmber', 'BluePurple', 'DarkPurple1']
 sg.theme(theme_names[theme_num - 1])
 
 
